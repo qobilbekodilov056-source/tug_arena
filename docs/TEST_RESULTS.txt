@@ -1,0 +1,86 @@
+
+> sysone-tug-arena@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: host requires full balanced teams, roster locked after start
+ok 1 - host requires full balanced teams, roster locked after start
+  ---
+  duration_ms: 6.647322
+  type: 'test'
+  ...
+# Subtest: questions and answers remain private, host receives no questions
+ok 2 - questions and answers remain private, host receives no questions
+  ---
+  duration_ms: 1.70268
+  type: 'test'
+  ...
+# Subtest: scores use fixed assigned questions denominator and signed rope direction
+ok 3 - scores use fixed assigned questions denominator and signed rope direction
+  ---
+  duration_ms: 0.85503
+  type: 'test'
+  ...
+# Subtest: duplicate requests do not score twice; stale question rejected
+ok 4 - duplicate requests do not score twice; stale question rejected
+  ---
+  duration_ms: 0.845886
+  type: 'test'
+  ...
+# Subtest: server timeouts consume questions, count only correct
+ok 5 - server timeouts consume questions, count only correct
+  ---
+  duration_ms: 0.552724
+  type: 'test'
+  ...
+# Subtest: winner podium from winning team with rank by correct then wrong then correct latency
+ok 6 - winner podium from winning team with rank by correct then wrong then correct latency
+  ---
+  duration_ms: 1.103466
+  type: 'test'
+  ...
+# Subtest: 1v1 threshold victory and final answer retry
+ok 7 - 1v1 threshold victory and final answer retry
+  ---
+  duration_ms: 1.251629
+  type: 'test'
+  ...
+# Subtest: reject incorrect schema, insufficient questions, unauthorized control
+ok 8 - reject incorrect schema, insufficient questions, unauthorized control
+  ---
+  duration_ms: 0.956443
+  type: 'test'
+  ...
+# Subtest: 40 players get identical question pool, independent shuffle, fixed denominator
+ok 9 - 40 players get identical question pool, independent shuffle, fixed denominator
+  ---
+  duration_ms: 7.966161
+  type: 'test'
+  ...
+# Subtest: multiple answers require exact set and reject unknown option
+ok 10 - multiple answers require exact set and reject unknown option
+  ---
+  duration_ms: 0.698655
+  type: 'test'
+  ...
+# Subtest: kick lobby only and cancel without declaring a winner
+ok 11 - kick lobby only and cancel without declaring a winner
+  ---
+  duration_ms: 0.76207
+  type: 'test'
+  ...
+# Subtest: HTTP full room lifecycle with six independent players, server-side scoring and podium
+ok 12 - HTTP full room lifecycle with six independent players, server-side scoring and podium
+  ---
+  duration_ms: 3305.764584
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3374.662377
